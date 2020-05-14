@@ -1,2 +1,2 @@
 # TF_object_detection
-Experimenting with Tensorflow Object Detection API
+Implementing TF Object Detection API for custom dataset. 
