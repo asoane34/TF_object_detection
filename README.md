@@ -1,3 +1,5 @@
+![sample_img]("readme_images/test_image")
+
 # TF_object_detection
 Implementing TF Object Detection API for custom dataset. 
 
