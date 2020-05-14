@@ -190,6 +190,8 @@ class RecordWriter():
 
         train_files, validation_files = train.filename.values, validation.filename.values
 
+        print(f"There are {len(validation_files)} in the validation set")
+
         all_train = self.df[self.df.filename.isin(train_files)].reset_index(drop = True)
 
         all_validation = self.df[self.df.filename.isin(validation_files)].reset_index(drop = True)
@@ -239,7 +241,7 @@ if __name__ == "__main__":
     DF = pd.read_csv(os.path.join(INPUT_PATH, "pre_tf.csv.gz"), compression = "gzip")
 
     record_writer = RecordWriter(DF, GROUP_VAR, IMG_DIR, OUTPUT_PATH_TRAIN,
-    OUTPUT_PATH_VALIDATION)
+    OUTPUT_PATH_VALIDATION, test_size = 0.1)
 
     record_writer.write_records()
 
