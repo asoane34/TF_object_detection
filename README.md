@@ -43,4 +43,4 @@ The API interface for training the model is to create a pipeline.config file, in
 I trained the model with a GPU runtime in [Google colab](https://colab.research.google.com/). I subscribe to Google Colab Pro, which gives access to much superior GPUs (NVIDIA P100 Telsa in this case). 20,000 steps took ~6 hours to train, and at the end of the training run the average precision of the validation class was consistently around 0.84. 
 
 ## Results
-The majority of the test set on Kaggle is hidden. However, they do provide 10 test images, and I have included these images at the top of the README.
+The majority of the test set on Kaggle is hidden. However, they do provide 10 test images, and I have included these images at the top of the README, but all inferences can be found in [this notebook.](https://github.com/asoane34/TF_object_detection/blob/master/03.1TestImageInferences.ipynb)
