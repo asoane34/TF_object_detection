@@ -14,7 +14,7 @@ This was a clean dataset- all images were a uniform size and the training set wa
 ## Data Augmentation
 
 The TF object detection API supports many different data augmentation techniques: Random flipping, random rotation, random cropping, random RGB to gray, random padding, etc. Because initial modeling efforts did not translate well to the validation set and the test set, I implemented two data augmentation techniques:
-* [Random Image Cropping](https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto) - Randomly crop images with probability of $50\%$ to an image area somewhere between $\frac{1}{10}$th and $\frac{99}{100}$th of the original image area, contingent upon there being at least one boundary box in the cropped image. 
+* [Random Image Cropping](https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto) - Randomly crop images with probability of $50\%$ to an image area somewhere between $$\frac{1}{10}$$th and $$\frac{99}{100}$$th of the original image area, contingent upon there being at least one boundary box in the cropped image. 
 * [Random RGB to Gray](https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto)- Randomly change images from an RGB color image to grayscale with a probability of $10\%$. 
 
 ## Model Selection
