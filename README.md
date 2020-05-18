@@ -1,4 +1,7 @@
-![sample_img](readme_images/readme_imagepro1.png)
+# Wheat Head Detection
+## Implementing Tensorflow Object Detection API for custom data
+
+![sample_img](readme_images/readme_imagepro3.png)
 
 # TF_object_detection
 Implementing TF Object Detection API for custom dataset. 
